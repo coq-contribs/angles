@@ -1,0 +1,11 @@
+Name: Angles
+Title: Angles orientés de vecteurs dans le plan
+Author: Frédérique Guilhot (Frederique.Guilhot@sophia.inria.fr)
+Institution: INRIA Sophia Antipolis, projet Lemme
+Date: 15 janvier 2002
+Description: A partir d'une axiomatisation des angles orientés de vecteurs 
+             du plan euclidien,on donne des preuves classiques des théorèmes 
+             de cocyclicité, de Simson, de Napoléon et de l'orthocentre.                     Voir le rapport de recherche associé 
+             (http://www-sop.inria.fr/lemme/FGRR.ps) et le fichier README.
+Keywords: Pcoq  géométrie théorème démonstration angle cercle geometry theorem proof angle circle
+Require:
