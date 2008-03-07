@@ -1,6 +1,0 @@
-point_tangente.vo: point_tangente.v point_angle.vo
-point_orthocentre.vo: point_orthocentre.v point_cocyclicite.vo
-point_napoleon.vo: point_napoleon.v point_cocyclicite.vo
-point_cocyclicite.vo: point_cocyclicite.v point_angle.vo
-point_angle.vo: point_angle.v
-point_Simson.vo: point_Simson.v point_cocyclicite.vo
