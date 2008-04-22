@@ -10,3 +10,4 @@ Description: A partir d'une axiomatisation des angles orientés de vecteurs
              (http://www-sop.inria.fr/lemme/FGRR.ps) et le fichier README.
 Keywords: Pcoq  géométrie théorème démonstration angle cercle geometry theorem proof angle circle
 Require:
+Category: Mathematics/Geometry/General
