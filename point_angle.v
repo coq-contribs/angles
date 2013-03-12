@@ -1,23 +1,23 @@
 Set Implicit Arguments.
 Unset Strict Implicit.
-Variable V : Type.
-Variable AV : Type.
-Variable cons : V -> V -> AV.
-Variable R : AV -> AV -> Prop.
+Parameter V : Type.
+Parameter AV : Type.
+Parameter cons : V -> V -> AV.
+Parameter R : AV -> AV -> Prop.
  
 Axiom reflexive : forall a : AV, R a a.
  
 Axiom symetrique : forall a b : AV, R a b -> R b a.
  
 Axiom transitive : forall a b c : AV, R a b -> R b c -> R a c.
-Variable opp : V -> V.
-Variable zero : AV.
-Variable pi : AV.
+Parameter opp : V -> V.
+Parameter zero : AV.
+Parameter pi : AV.
  
 Axiom angle_nul : forall u : V, R (cons u u) zero.
  
 Axiom angle_plat : forall u : V, R (cons u (opp u)) pi.
-Variable plus : AV -> AV -> AV.
+Parameter plus : AV -> AV -> AV.
  
 Axiom Chasles : forall u v w : V, R (plus (cons u v) (cons v w)) (cons u w).
  
@@ -35,7 +35,7 @@ Axiom angle_cons : forall (a : AV) (u : V), exists v : V, R a (cons u v).
  
 Axiom
   compatible : forall a b c d : AV, R a b -> R c d -> R (plus a c) (plus b d).
-Variable vR : V -> V -> Prop.
+Parameter vR : V -> V -> Prop.
  
 Axiom v_refl : forall u : V, vR u u.
  
@@ -48,8 +48,8 @@ Axiom opp_compatible : forall u v : V, vR u v -> vR (opp u) (opp v).
 Axiom
   vR_R_compatible :
     forall u u' v v' : V, vR u u' -> vR v v' -> R (cons u v) (cons u' v').
-Variable PO : Type.
-Variable vec : PO -> PO -> V.
+Parameter PO : Type.
+Parameter vec : PO -> PO -> V.
  
 Axiom opp_vect : forall A B : PO, vR (opp (vec A B)) (vec B A).
  

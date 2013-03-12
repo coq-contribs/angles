@@ -267,7 +267,7 @@ apply transitive with (plus (cons u v) (cons v u)).
 apply compatible; auto.
 auto.
 Qed.
-Variable pisurdeux : AV.
+Parameter pisurdeux : AV.
  
 Axiom double_pisurdeux : R (double pisurdeux) pi.
 Hint Resolve double_pisurdeux.
